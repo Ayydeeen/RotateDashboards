@@ -53,3 +53,7 @@ Present()
 
 # Schedule the refresh_webpage function to run every day at 8 am
 schedule.every().day.at("08:00").do(refresh_webpage)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
